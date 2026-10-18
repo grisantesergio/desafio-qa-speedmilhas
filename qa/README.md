@@ -8,6 +8,8 @@ O objetivo é verificar os principais fluxos da aplicação, identificar possív
 
 O Cypress foi escolhido por permitir a automação de testes End-to-End (E2E) e de API em uma única ferramenta, facilitando a organização, a execução e a manutenção dos testes.
 
+A automação contempla interações com a interface, como preenchimento de formulários, cliques e validação de mensagens, além de requisições HTTP para verificar os endpoints da API.
+
 ## 2. Tecnologias utilizadas
 
 - **Cypress:** framework de automação de testes.
