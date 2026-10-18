@@ -2,15 +2,11 @@
 
 ## 1. Sobre o projeto
 
-Este projeto contém testes automatizados desenvolvidos com Cypress para validar a interface web e a API da aplicação Speed Milhas.
+Este projeto contém testes automatizados desenvolvidos com Cypress e JavaScript para validar a interface web e a API da aplicação Speed Milhas.
 
-O Cypress foi escolhido para realizar a automação dos testes por oferecer uma estrutura prática para validar aplicações web e APIs utilizando JavaScript.
+O objetivo é verificar os principais fluxos da aplicação, identificar possíveis falhas e garantir que as funcionalidades atendam ao comportamento esperado.
 
-A escolha também permitiu centralizar os testes E2E e de API em uma única ferramenta, simplificando a organização, a manutenção e a execução da suíte automatizada por meio de um único comando.
-
-A ferramenta permite automatizar interações pela interface, como preenchimento de formulários, cliques e validações de resultados, além de executar requisições HTTP para testar os endpoints da API.
-
-A automação foi implementada em JavaScript e está organizada em testes E2E (End-to-End) e testes de API.
+O Cypress foi escolhido por permitir a automação de testes End-to-End (E2E) e de API em uma única ferramenta, facilitando a organização, a execução e a manutenção dos testes.
 
 ## 2. Tecnologias utilizadas
 
