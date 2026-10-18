@@ -67,7 +67,6 @@ Os testes devem evidenciar defeitos existentes, sem corrigir a implementação d
 - Validar o isolamento dos dados entre as agências Alfa e Beta.
 - Verificar os códigos HTTP 400 e 401 nas condições previstas na especificação.
 - Avaliar mensagens de sucesso e erro, navegação e recuperação após falhas.
-- Inspecionar o comportamento visual em diferentes tamanhos de tela.
 - Documentar os defeitos identificados com passos para reprodução, resultado esperado, resultado obtido e evidências.
 
 Os cenários exploratórios serão orientados pelas evidências observadas durante a execução e pelas regras definidas na especificação.
