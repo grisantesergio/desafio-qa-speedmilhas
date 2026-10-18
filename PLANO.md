@@ -8,7 +8,7 @@ A estratégia contempla testes funcionais, negativos, de integração e ponta a 
 
 A execução será orientada por risco, considerando impacto para o negócio, probabilidade de falha e criticidade dos fluxos afetados.
 
-A cobertura inicial será composta por 3 testes E2E e 3 a 4 testes de API, complementados por testes manuais e exploratórios.
+A cobertura inicial será composta por testes E2E e testes de API, complementados por testes manuais e exploratórios.
 
 ## 2. Riscos priorizados
 
@@ -31,8 +31,6 @@ As prioridades são hipóteses iniciais de risco e devem ser refinadas conforme 
 
 ### 3.1. Testes de API
 
-Implementar de 3 a 4 testes automatizados, priorizando:
-
 - Validar códigos HTTP, estrutura e tipos dos campos de resposta conforme os contratos definidos.
 - Validar o comportamento da busca, incluindo ordenação dos resultados, resultados parciais e tratamento de falhas dos fornecedores.
 - Validar a composição do preço final, considerando a taxa de serviço de 7% e a regra de arredondamento para cima definida na especificação.
@@ -41,8 +39,6 @@ Implementar de 3 a 4 testes automatizados, priorizando:
 Quando aplicável, verificar os códigos HTTP 400 e 401 conforme as condições especificadas para cada endpoint, sem presumir que ambos sejam esperados para a mesma situação.
 
 ### 3.2. Testes E2E
-
-Implementar 3 testes automatizados para cobrir os principais fluxos críticos da interface:
 
 1. **Busca e apresentação de resultados:** executar uma busca e verificar a ordenação das opções e o comportamento diante de resultados parciais.
 2. **Cotação e cálculo do preço:** verificar a composição do preço final, a taxa de serviço de 7% e a apresentação dos valores calculados.
@@ -90,7 +86,6 @@ Esses itens poderão ser incorporados em etapas posteriores, conforme a criticid
 
 A execução inicial será considerada concluída quando:
 
-- Os 3 testes E2E e os 3 a 4 testes de API previstos tiverem sido implementados e executados, com seus resultados registrados.
 - A execução dos testes puder ser reproduzida por meio de um único comando documentado no `README.md`.
 - Os defeitos reproduzíveis estiverem documentados em `BUGS.md`, com evidências, passos para reprodução, resultado esperado e resultado obtido.
 - Os testes automatizados apresentarem resultados verificáveis, com falhas identificadas e sem mascaramento de defeitos para forçar a aprovação.
