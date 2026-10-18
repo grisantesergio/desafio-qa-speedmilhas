@@ -29,7 +29,7 @@ A interface permite manter a data de volta anterior à data de ida e exibe resul
 - Data de volta: `20/10/2026`.
 - A busca exibiu ofertas mesmo com as datas inconsistentes.
 
-![BUG-01 - Data inválida](evidências/BUG-01-data-invalida.png)
+![BUG-01 - Data inválida](<evidências/BUG 1.png>)
 
 **Impacto**
 
@@ -64,7 +64,7 @@ O sistema deve validar os trechos de acordo com o tipo de viagem selecionado e n
 O usuário pode acreditar que está reservando uma viagem de ida e volta, mas concluir uma reserva registrada como somente ida, gerando risco de erro na compra e de insatisfação.
 
 **Evidência:**
-![BUG-02 - Ida e volta com apenas um trecho selecionado](evidências/BUG-02-trecho-nao-selecionado.png)
+![BUG-02 - Ida e volta com apenas um trecho selecionado](<evidências/BUG 2.png>)
 
 ## BUG-03 — A interface remove ofertas válidas quando um fornecedor falha
 
@@ -93,7 +93,7 @@ As ofertas aparecem inicialmente, mas depois desaparecem e a interface exibe a m
 - A chamada `GET /search/stream` também terminou com `status: "partial"` e cinco ofertas, enquanto o fornecedor B retornou erro.
 - O comportamento foi reproduzido na interface: as ofertas apareceram e depois desapareceram.
 
-![BUG-03 - Resultados parciais](evidências/BUG-03-resultados-parciais.png)
+![BUG-03 - Resultados parciais](<evidências/BUG 3.png>)
 
 **Impacto**
 
@@ -129,7 +129,7 @@ Foram realizados os seguintes testes:
 - `sergiogrisante@hotmailcom`: permite avançar.
 - Endereço com vírgula no lugar do ponto: exibe mensagem de erro.
 
-![BUG-04 - E-mail inválido aceito](evidências/BUG-04-email-invalido.png)
+![BUG-04 - E-mail inválido aceito](<evidências/BUG 4.png>)
 
 **Impacto**
 
@@ -169,7 +169,7 @@ O sistema deve validar o nome do passageiro e rejeitar entradas que não constit
 
 **Evidência**
 
-![BUG-05 - Nome do passageiro inválido aceito](evidências/BUG-05-nome-invalido.png)
+![BUG-05 - Nome do passageiro inválido aceito](<evidências/BUG 5.png>)
 
 **Impacto:**
 
