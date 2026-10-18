@@ -87,3 +87,5 @@ Também investiria na integração dos testes a um pipeline de CI/CD, permitindo
 ## Como usei IA
 
 Utilizei inteligência artificial como apoio na revisão dos textos e na melhoria da clareza, organização e consistência da documentação do desafio.
+
+Utilizei ferramentas de IA como apoio para organizar o raciocínio e revisar possíveis inconsistências durante a análise do PR
