@@ -29,6 +29,8 @@ A interface permite manter a data de volta anterior à data de ida e exibe resul
 - Data de volta: `20/10/2026`.
 - A busca exibiu ofertas mesmo com as datas inconsistentes.
 
+![BUG-01 - Data inválida](evidências/BUG-01-data-invalida.png)
+
 **Impacto**
 
 O usuário pode iniciar o processo de compra com datas de viagem inválidas, gerando confusão e possíveis falhas no fluxo de reserva.
@@ -62,7 +64,7 @@ O sistema deve validar os trechos de acordo com o tipo de viagem selecionado e n
 O usuário pode acreditar que está reservando uma viagem de ida e volta, mas concluir uma reserva registrada como somente ida, gerando risco de erro na compra e de insatisfação.
 
 **Evidência:**
-Adicionar capturas de tela da seleção “Ida e volta”, do avanço com apenas um trecho preenchido e da tela de confirmação.
+![BUG-02 - Ida e volta com apenas um trecho selecionado](evidências/BUG-02-trecho-nao-selecionado.png)
 
 ## BUG-03 — A interface remove ofertas válidas quando um fornecedor falha
 
@@ -90,6 +92,8 @@ As ofertas aparecem inicialmente, mas depois desaparecem e a interface exibe a m
 - A chamada `POST /search` retornou `status: "partial"` e cinco ofertas válidas: duas do fornecedor A e três do fornecedor C.
 - A chamada `GET /search/stream` também terminou com `status: "partial"` e cinco ofertas, enquanto o fornecedor B retornou erro.
 - O comportamento foi reproduzido na interface: as ofertas apareceram e depois desapareceram.
+
+![BUG-03 - Resultados parciais](evidências/BUG-03-resultados-parciais.png)
 
 **Impacto**
 
@@ -124,6 +128,8 @@ Foram realizados os seguintes testes:
 - `abc`: exibe mensagem de erro.
 - `sergiogrisante@hotmailcom`: permite avançar.
 - Endereço com vírgula no lugar do ponto: exibe mensagem de erro.
+
+![BUG-04 - E-mail inválido aceito](evidências/BUG-04-email-invalido.png)
 
 **Impacto**
 
@@ -160,6 +166,10 @@ O sistema aceita o valor `@@@` como nome do passageiro e permite avançar até a
 **Resultado esperado:**
 
 O sistema deve validar o nome do passageiro e rejeitar entradas que não constituam um nome válido, exibindo uma mensagem clara de validação.
+
+**Evidência**
+
+![BUG-05 - Nome do passageiro inválido aceito](evidências/BUG-05-nome-invalido.png)
 
 **Impacto:**
 
