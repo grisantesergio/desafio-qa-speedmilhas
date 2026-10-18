@@ -64,6 +64,7 @@ O sistema deve validar os trechos de acordo com o tipo de viagem selecionado e n
 O usuário pode acreditar que está reservando uma viagem de ida e volta, mas concluir uma reserva registrada como somente ida, gerando risco de erro na compra e de insatisfação.
 
 **Evidência:**
+
 ![BUG-02 - Ida e volta com apenas um trecho selecionado](<evidências/BUG 2.png>)
 
 ## BUG-03 — A interface remove ofertas válidas quando um fornecedor falha
